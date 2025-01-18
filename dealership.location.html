@@ -85,26 +85,26 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="booking.html" class="dropdown-item">Our Dealershop</a>
+                        <a href="booking.html" class="dropdown-item">Booking</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Dealer</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="dealership.location.html" class="dropdown-item active">Dealership Location</a>
+                        <a href="dealership.location.html" class="dropdown-item">Dealers</a>
                         <a href="offers.html" class="dropdown-item">Offers</a>
-                        <a href="service.html" class="dropdown-item">Service</a>
+                        <a href="service.html" class="dropdown-item active">Service</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Model</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="temerario.html" class="dropdown-item">Temerario</a>
-                        <a href="revuelto.html" class="dropdown-item">Reveult</a>
-                        <a href="urus.html" class="dropdown-item">Urus</a>
-                        <a href="huracan.html" class="dropdown-item">Huracan</a>
-                        <a href="booking.html" class="dropdown-item">Pre Owned</a>
-                        <a href="limited.html" class="dropdown-item">Limited Series</a>
+                        <a href="newtemerario.html" class="dropdown-item">Temerario</a>
+                        <a href="newreveulto.html" class="dropdown-item">Reveult</a>
+                        <a href="newurus.html" class="dropdown-item">Urus</a>
+                        <a href="newhuracan.html" class="dropdown-item">Huracan</a>
+                        <a href="newpreowned.html" class="dropdown-item">Pre Owned</a>
+                        <a href="newlimited series.html" class="dropdown-item">Limited Series</a>
                     </div>
                 </div>
                 <a href="event.html" class="nav-item nav-link">Event</a>
@@ -114,11 +114,33 @@
     <!-- Navbar End -->
 
 
+    <!-- css for animation -->
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .bounce-animation {
+            animation: bounce 2s infinite;
+        }
+    </style>
+    <!-- css for animation -->
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/header\ bg.jpg);">
         <div class="container-fluid page-header-inner py-5">
             <div class="container text-center">
-                <h1 class="display-3 text-white mb-3 animated slideInDown"><sup>DEALERSHIP</sup> <sub>LOCATION</sub></h1>
+                <h1 class="display-3 text-white mb-3 bounce-animation">
+                    <sup>DEALERSHIP</sup><sub>LOCATION</sub>
+                </h1>
                 <nav aria-label="breadcrumb"></nav>
             </div>
         </div>
