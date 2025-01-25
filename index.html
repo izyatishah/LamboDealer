@@ -31,41 +31,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-     <!-- Background audio -->
-     <audio id="backgroundAudio" autoplay loop hidden>
-        <source src="audio/Last-Call-chosic.com_.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <button id="autoplay" class="bg-pink-500 text-white px-4 py-2 rounded-full hidden">
-        <i class="fas fa-play"></i> Play Music
-    </button>
-
-    <script>
-        const audio = document.getElementById('backgroundAudio');
-        const playButton = document.getElementById('playButton');
-
-        // Ensure the audio starts in case of browser autoplay restrictions
-        document.body.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-                playButton.classList.remove('hidden');
-                playButton.innerHTML = '<i class="fas fa-pause"></i> Pause Music';
-            }
-        });
-
-        playButton.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-                playButton.innerHTML = '<i class="fas fa-pause"></i> Pause Music';
-            } else {
-                audio.pause();
-                playButton.innerHTML = '<i class="fas fa-play"></i> Play Music';
-            }
-        });
-
-        audio.volume = 0.2; // Lower the volume for background music
-    </script>
 </head>
 
 <body>
@@ -263,7 +228,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 pt-4" style="min-height: 400px;">
                     <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/lamboabout" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/lamboabout2.webp" style="object-fit: cover;" alt="">
                         <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
                             <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Years</span></h1>
                             <h4 class="text-white">Experience</h4>
